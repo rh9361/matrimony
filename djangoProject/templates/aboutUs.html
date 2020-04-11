@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block head_title %}{{ title }} | {{ block.super }} {% endblock head_title %}
+
+{% block content %}
+
+<div class="grid_1">
+  <div class="container">
+  <!--  <div class="breadcrumb1">
+      <ul>
+        <a href="{% url 'profiles:list' %}"><i class="fa fa-home home_1"></i></a>
+        <span class="divider">&nbsp;|&nbsp;</span>
+        <li class="current-page">All Profiles</li>
+      </ul>
+    </div>
+  -->
+    <h1>About Us</h1>
+    <br><br><br>
+    <hr>
+
+    <h1>How it works</h1>
+    <ul>
+      <li>You can get 5 contacts per week directly whichever you like.</li>
+      <li>After that you can search profiles based on your interest and send notification by clicking send interest</li>
+      <li>Another candidate will check his/her profile and if he/she likes yours then respond by cliking interested or not interested</li>
+      <li>If second candidate is also interested then contacts will be shared.</li>
+      <li>If second candidate is not interested then contacts will not be shared.</li>
+      <li>Please update your profile after few days periodically, because all profiles list is displayed based on latest updated time.</li>
+      <li>updating periodically will increases chances of more visibility</li>
+
+    </ul>
+    <br><br><br>
+    <hr>
+
+  <br><br><br>
+  <hr>
+  <h1>How matching score is calculated?</h1>
+  <ul>
+    <li>Patrika matching and its score(max-30)</li>
+    <li>Partner preferences(max-70)</li>
+    <li> <ul>
+      <li>Education</li>
+      <li>Job</li>
+      <li>Location</li>
+      <li>Property</li>
+    </ul></li>
+
+  </ul>
+  </div>
+</div>
+{% endblock content %}
